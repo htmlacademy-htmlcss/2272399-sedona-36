@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <div class="body-container">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -56,7 +57,7 @@
 
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ol class="breadcrumbs">
+        <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span>
@@ -228,8 +229,10 @@
 
 
     <section class="newsletter">
-      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-      <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <div class="main-items-container">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      </div>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email" class="visually-hidden">Email</label>
         <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email" required>
@@ -274,5 +277,6 @@
       </a>
     </section>
   </footer>
+</div>
 </body>
 </html>

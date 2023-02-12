@@ -14,15 +14,69 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 body{
+  margin: 0;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   color: #000000;
 }
 
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.body-container{
+  background-color: #FFFFFF;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
 /* Header */
+
+.page-header{
+  padding: 0 70px;
+}
+
+.navigation{
+  display: flex;
+}
+.navigation-logo{
+  margin-right: 30px;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 440px;
+
+  list-style-type: none;
+}
+
+.navigation-user{
+  width: 270px;
+  margin-left: auto;
+}
+
 .navigation-link{
   font-weight: 700;
   font-size: 20px;
@@ -41,12 +95,22 @@ body{
 }
 
 /* Index page main content*/
+
+.main-container{
+  flex-grow: 1;
+}
+
 .promo{
   background-image:  url("/images/divider.svg"), url("/images/promo-background.jpg");
   background-color: #333333;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
   background-position: bottom, center;
+}
+
+.promo-image{
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages-main-title{
@@ -70,6 +134,13 @@ body{
 
 .advantages-list{
   text-align: center;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type: none;
 }
 
 .advantages-item{
@@ -85,6 +156,11 @@ body{
 .advantages-item:nth-child(3n){
   color: #000000;
   background-color: #82B3D320;
+}
+
+.main-items-container{
+  width: 620px;
+  margin: 0 auto;
 }
 
 .services-main-title{
@@ -108,6 +184,17 @@ body{
 
 .services-list{
   text-align: center;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  list-style-type: none;
+}
+
+.services-item{
+  width: 400px;
 }
 
 .services-item:nth-child(2n+1){
@@ -144,14 +231,36 @@ body{
 
 
 /* Footer */
+.page-footer{
+  padding: 0 70px;
+
+  display: flex;
+}
+
 .page-footer a{
   color: #000000;
   text-decoration: none;
 }
 
+.footer-social{
+  width: 145px;
+}
+
+.footer-social-list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-social-list{
+  list-style-type: none;
+}
+
 .footer-contacts{
+  width: 720px;
+  padding: 0 40px;
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
 }
 
 /* Catalog page main content*/
@@ -162,18 +271,38 @@ body{
   background-size: cover;
 
   color: #FFFFFF;
+
+  padding: 0 70px;
 }
 
 .inner-header-title{
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+
+  margin: 0;
+}
+
+.breadcrumbs-list{
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
 }
 
 .breadcrumbs-item a{
   font-size: 16px;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.catalog-filters{
+  display: flex;
+}
+
+.catalog-filter-list{
+  list-style-type: none;
+  width: 150px;
 }
 
 .catalog-filter-title{
