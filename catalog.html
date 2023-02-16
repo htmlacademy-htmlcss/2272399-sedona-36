@@ -43,7 +43,7 @@
             </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link button" href="#">
+          <a class="navigation-link button hostel-search-small-button" href="#">
             Хочу сюда!
           </a>
         </li>
@@ -51,9 +51,9 @@
     </nav>
   </header>
 
-  <main class="main-inner">
+  <main class="main-inner main-container">
 
-    <div class="inner-container">
+    <div class="inner-container-filters">
 
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -63,11 +63,11 @@
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">
-                Гостиницы
-              </a>
-            </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">
+              Гостиницы
+            </a>
+          </li>
         </ol>
       </header>
 
@@ -130,25 +130,28 @@
       </form>
     </div>
 
+
     <section class="catalog-hostels">
-      <h2 class="catalog-hostels-title">Найдено гостиниц: <span class="hostels-count">38</span></h2>
+      <div class="catalog-hostels-inner-container">
+        <h2 class="catalog-hostels-title">Найдено гостиниц: <span class="hostels-count">38</span></h2>
 
-      <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">Сначала дешeвые</option>
-        <option value="expensive">Сначала дорогие</option>
-        <option value="popular">Сначала популярные</option>
-      </select>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешeвые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
 
-      <div class="view-control">
-        <a class="view-button" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="view-button" href="#">
-          <span class="visually-hidden">Показать фото</span>
-        </a>
-        <a class="view-button" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="view-control">
+          <a class="view-button" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="view-button" href="#">
+            <span class="visually-hidden">Показать фото</span>
+          </a>
+          <a class="view-button" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
       </div>
 
       <ul class="hostel-list">
@@ -207,25 +210,26 @@
 
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="button pagination-link pagination-link-current" href="#">1</a>
+          <a class="pagination-link pagination-link-current" href="#">1</a>
         </li>
         <li class="pagination-item">
-          <a class="button pagination-link" href="#">2</a>
+          <a class="pagination-link" href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a class="button pagination-link" href="#">3</a>
+          <a class="pagination-link" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="button pagination-link" href="#">4</a>
+          <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="button pagination-link pagination-show-more" href="#">...</a>
+          <a class="pagination-link pagination-show-more" href="#">...</a>
         </li>
         <li class="pagination-item">
-          <a class="button pagination-link" href="#">10</a>
+          <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
     </section>
+
 
 
     <section class="newsletter">
