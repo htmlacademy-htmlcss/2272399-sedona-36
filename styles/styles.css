@@ -295,7 +295,7 @@ body{
 
 .newsletter{
   background-image: url("/images/email-background.jpg");
-  background-color: #333333;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -465,6 +465,10 @@ input[type="email"]{
 
   padding: 0;
   margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
 }
 
 .hostel-card{
@@ -473,13 +477,41 @@ input[type="email"]{
   box-sizing: border-box;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.hostel-card a{
+.hostel-card-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.hostel-card-desc-container{
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hostel-card-buttons-container{
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hostel-card-rating-container{
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hostel-card-title-link{
+  margin-top: 16px;
   text-decoration: none;
 }
 
 .hostel-card-title{
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -487,10 +519,22 @@ input[type="email"]{
 }
 
 .hostel-rating{
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 9px 23px;
+  border-radius: 4px;
   background-color: #F2F2F2;
 }
 
+.newsletter-inner{
+  background-image: none;
+  color:#000000;
+}
 
+.newsletter-inner input[type="email"]{
+  background-color: #F2F2F2;
+}
 
 /* Buttons */
 .button{
@@ -550,17 +594,22 @@ input[type="email"]{
 }
 
 .hostel-card-button-favorite{
-  padding: 8px 26px;
+  padding: 8px 20px;
   background-color: #82B3D3;
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .hostel-card-button-favorite-selected{
-  padding: 8px 26px;
   background-color: #7DB54F;
 }
 
 .hostel-card-button-more{
   padding: 8px 26px;
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* Pagination*/
