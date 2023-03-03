@@ -156,6 +156,78 @@
         </a>
       </section>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-hostel-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="close-button-icon" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="currentColor"/>
+            </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="hostel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-field-group">
+              <label class="modal-label" for="arrival-date">Дата заезда:</label>
+              <div class="input-wrapper">
+                <input class="modal-input modal-input-date" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020" required>
+                <span class="message error-message">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+            <div class="modal-field-group field-group-departure">
+              <label class="modal-label" for="departure-date">Дата выезда:</label>
+              <div class="input-wrapper">
+                <input class="modal-input modal-input-date" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2023" required>
+                <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            </div>
+            <div class="field-group-wrapper">
+              <div class="modal-field-group field-group-adults">
+                <label class="modal-label" for="adults-count">Взрослые:</label>
+                <div class="input-wrapper-date">
+                  <button class="input-minus" type="button">
+                    <svg class="minus-icon" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <input class="modal-input modal-input-number" type="number" id="adults-count" name="adults-count" value="2">
+                  <button class="input-plus">
+                    <svg class="plus-icon" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor"/>
+                      </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-field-group field-group-children">
+                <span class="modal-label">
+                  <label class="modal-label" for="children-count">Дети:</label>
+
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"></button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="input-wrapper-date">
+                  <button class="input-minus" type="button">
+                    <svg class="minus-icon" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <input class="modal-input modal-input-number" type="number" id="children-count" name="children-count" value="2">
+                  <button class="input-plus">
+                    <svg class="plus-icon" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor"/>
+                      </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <input class="button find-button" type="submit" value="Найти">
+          </form>
+        </section>
+      </div>
+    </div>
   </div>
   </body>
 </html>
