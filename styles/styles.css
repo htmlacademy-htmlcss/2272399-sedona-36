@@ -807,14 +807,14 @@ input[type="email"]{
   padding-right: 45px;
 }
 
+.modal-input-number{
+  -moz-appearance: textfield;
+}
+
 .modal-input::-webkit-outer-spin-button,
 .modal-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-}
-
-.modal-input-number{
-  -moz-appearance: textfield;
 }
 
 .field-group-wrapper{
@@ -831,8 +831,9 @@ input[type="email"]{
 .tooltip{
   position: absolute;
 
-  transform: translateX(10px);
   -moz-transform: translateX(10px) translateY(-7px);
+  transform: translateX(10px);
+
   z-index: 1;
 }
 
@@ -854,9 +855,9 @@ input[type="email"]{
 
   position: absolute;
   left: 50%;
+  -moz-transform: translateX(-50%) translateY(10px);
   transform: translateX(-50%);
   top: 40px;
-  -moz-transform: translateX(-50%) translateY(10px);
 
   box-sizing: border-box;
   width: 256px;
@@ -1125,14 +1126,14 @@ input[type="email"]{
   line-height: 24px;
 }
 
+.range-input{
+  -moz-appearance: textfield;
+}
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-}
-
-.range-input{
-  -moz-appearance: textfield;
 }
 
 .range-scale{
